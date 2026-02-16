@@ -177,7 +177,7 @@ def determine_season():
     month = input('Enter the month of the year (Jan - Dec): ').capitalize()
     day = int(input('Enter the day of the month: '))
 
-    if day <= 0 or day >= 31:  
+    if day < 1 or day >= 31:  
         print('invalid input')
 
     if month in ('Jan', 'Feb'): season = 'Winter'
@@ -200,3 +200,7 @@ def determine_season():
     
 # Call the function
 determine_season()
+
+
+
+
